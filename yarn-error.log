@@ -1,0 +1,32 @@
+Arguments: 
+  /home/motoka/.nvm/versions/node/v14.15.1/bin/node /home/motoka/.nvm/versions/node/v14.15.1/bin/yarn add express
+
+PATH: 
+  /home/motoka/anaconda3/bin:/home/motoka/.nvm/versions/node/v14.15.1/bin:/home/motoka/anaconda3/bin:/home/motoka/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/motoka/WORKSPACE/ENVIRONMENT/flutter-lib/flutter/bin:/home/motoka/WORKSPACE/ENVIRONMENT/flutter-lib/flutter/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+
+npm manifest: 
+  {
+    "name": "node",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
