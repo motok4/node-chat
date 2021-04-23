@@ -7,12 +7,12 @@ interface IMessageCreate {
   user_id: string;
 }
 export class MessageService {
-  private _messageRepository;
+  private _messageRepository = null;
   constructor() {
-    this._messageRepository = getCustomRepository(MessagesRepository);
+
   }
   async create({ admin_id, text, user_id }: IMessageCreate) {
-
+    this._messageRepository = getCustomRepository(MessagesRepository);
     const message = await this._messageRepository.create({
       admin_id,
       text,
@@ -23,7 +23,7 @@ export class MessageService {
     return message;
   }
   async listByUser(user_id: string) {
-
+    this._messageRepository = getCustomRepository(MessagesRepository);
     const messages = await this._messageRepository.find({
       where: {user_id},
       relations: ["user"]
